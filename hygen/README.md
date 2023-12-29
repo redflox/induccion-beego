@@ -36,7 +36,7 @@ docker exec -it test_hygen bash
 ```bash
 $ docker exec -it test_hygen bash
 ```
-2. CONTAINER
+2. CONTAINER (edite "nombre_api_mid")
 ```bash
 $ hygen plantilla_api_mid with-prompt --appname nombre_api_mid
 ```
@@ -44,7 +44,7 @@ $ hygen plantilla_api_mid with-prompt --appname nombre_api_mid
 ```bash
 $ exit
 ```
-4. HOST
+4. HOST (edite "nombre_api_mid")
 ```bash
 $ docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_mid $GOPATH/src/github.com/udistrital
 ```
@@ -55,7 +55,7 @@ $ docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_mid $GOPATH/src/
 ```bash
 $ docker exec -it test_hygen bash
 ```
-2. CONTAINER
+2. CONTAINER (edite "nombre_api_crud")
 ```bash
 $ hygen plantilla_api_crud with-prompt --appname nombre_api_crud
 ```
@@ -63,7 +63,7 @@ $ hygen plantilla_api_crud with-prompt --appname nombre_api_crud
 ```bash
 $ exit
 ```
-4. HOST
+4. HOST (edite "nombre_api_crud")
 ```bash
 $ docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_crud $GOPATH/src/github.com/udistrital
 ```
