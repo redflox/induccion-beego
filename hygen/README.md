@@ -25,7 +25,7 @@ docker run -d --network host --name test_hygen hygen:test
 Luego para hacer uso de la herramienta puedes acceder al contenedor
 
 ```bash
-docker exec -it hygen:test bash
+docker exec -it test_hygen bash
 ```
 
 ## CREAR APIS CON EL CONTENEDOR
@@ -34,7 +34,7 @@ docker exec -it hygen:test bash
 
 1. HOST
 ```bash
-$ docker exec -it hygen:test bash
+$ docker exec -it test_hygen bash
 ```
 2. CONTAINER
 ```bash
@@ -53,7 +53,7 @@ $ docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_mid $GOPATH/src/
 
 1. HOST
 ```bash
-$ docker exec -it hygen:test bash
+$ docker exec -it test_hygen bash
 ```
 2. CONTAINER
 ```bash
