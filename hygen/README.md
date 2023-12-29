@@ -20,13 +20,6 @@ Después de contruir la imagen con una etiqueta de versión, puedes hacer refere
 docker run -d --network host --name test_hygen hygen:test
 ```
 
-## Acceder al contenedor
-
-Luego para hacer uso de la herramienta puedes acceder al contenedor
-
-```bash
-docker exec -it test_hygen bash
-```
 
 ## CREAR APIS CON EL CONTENEDOR
 
