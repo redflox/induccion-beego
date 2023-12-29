@@ -1,26 +1,5 @@
 # Dockerizando HYGEN_UD
 
-
-## CREAR APIS CON EL CONTENEDOR
-
-### crear api_mid
-
-```bash
-docker exec -it hygen:test bash
-hygen plantilla_api_mid with-prompt --appname nombre_api_mid
-exit
-docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_mid $GOPATH/src/github.com/udistrital
-```
-
-### crear api_crud
-
-```bash
-docker exec -it hygen:test bash
-hygen plantilla_api_crud with-prompt --appname nombre_api_crud
-exit
-docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_crud $GOPATH/src/github.com/udistrital
-```
-
 ## Contruir imagen
 
 En este apartado se manejan tres etiquetas de vercionamiento:
@@ -48,3 +27,44 @@ Luego para hacer uso de la herramienta puedes acceder al contenedor
 ```bash
 docker exec -it hygen:test bash
 ```
+
+## CREAR APIS CON EL CONTENEDOR
+
+### crear api_mid
+
+1. HOST
+```bash
+$ docker exec -it hygen:test bash
+```
+2. CONTAINER
+```bash
+$ hygen plantilla_api_mid with-prompt --appname nombre_api_mid
+```
+3. CONTAINER
+```bash
+$ exit
+```
+4. HOST
+```bash
+$ docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_mid $GOPATH/src/github.com/udistrital
+```
+
+### crear api_crud
+
+1. HOST
+```bash
+$ docker exec -it hygen:test bash
+```
+2. CONTAINER
+```bash
+$ hygen plantilla_api_crud with-prompt --appname nombre_api_crud
+```
+3. CONTAINER
+```bash
+$ exit
+```
+4. HOST
+```bash
+$ docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_crud $GOPATH/src/github.com/udistrital
+```
+
