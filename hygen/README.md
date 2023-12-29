@@ -27,37 +27,37 @@ docker run -d --network host --name test_hygen hygen:test
 
 1. HOST
 ```bash
-$ docker exec -it test_hygen bash
+docker exec -it test_hygen bash
 ```
 2. CONTAINER (edite "nombre_api_mid")
 ```bash
-$ hygen plantilla_api_mid with-prompt --appname nombre_api_mid
+hygen plantilla_api_mid with-prompt --appname nombre_api_mid
 ```
 3. CONTAINER
 ```bash
-$ exit
+exit
 ```
 4. HOST (edite "nombre_api_mid")
 ```bash
-$ docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_mid $GOPATH/src/github.com/udistrital
+docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_mid $GOPATH/src/github.com/udistrital
 ```
 
 ### Crear api_crud
 
 1. HOST
 ```bash
-$ docker exec -it test_hygen bash
+docker exec -it test_hygen bash
 ```
 2. CONTAINER (edite "nombre_api_crud")
 ```bash
-$ hygen plantilla_api_crud with-prompt --appname nombre_api_crud
+hygen plantilla_api_crud with-prompt --appname nombre_api_crud
 ```
 3. CONTAINER
 ```bash
-$ exit
+exit
 ```
 4. HOST (edite "nombre_api_crud")
 ```bash
-$ docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_crud $GOPATH/src/github.com/udistrital
+docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_crud $GOPATH/src/github.com/udistrital
 ```
 
