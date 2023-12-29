@@ -17,7 +17,7 @@ docker build -t hygen:test .
 Después de contruir la imagen con una etiqueta de versión, puedes hacer referencia a esa versión especifica cuando ejecutes contenedores basados en ella. Por ejemplo:
 
 ```bash
-docker run -d --network host --name hygen:test hygen:etiqueta
+docker run -d --network host --name test_hygen hygen:test
 ```
 
 ## Acceder al contenedor
