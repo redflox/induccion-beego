@@ -1,4 +1,4 @@
-# Dockerizando HYGEN_UD
+# Dockerizando Hygen
 
 ## Contruir imagen
 
