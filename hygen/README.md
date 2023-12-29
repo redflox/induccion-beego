@@ -7,7 +7,7 @@ En este apartado se manejan tres etiquetas de versionamiento:
 2. develop  ->  Desarrollo 
 3. test     ->  pruebas
 
-Para construir la imagen se usa el comando
+Ubiquese en el directorio donde esta el Dockerfile, de lo contrario no funciona. Para construir la imagen se usa el comando: 
 ```bash
 docker build -t hygen:test .
 ```
