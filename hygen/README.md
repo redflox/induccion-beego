@@ -2,19 +2,19 @@
 
 ## Contruir imagen
 
-En este apartado se manejan tres etiquetas de vercionamiento:
+En este apartado se manejan tres etiquetas de versionamiento:
 1. prod     ->  producción
 2. develop  ->  Desarrollo 
 3. test     ->  pruebas
 
-Para contruir la imagen se usa el comando
+Para construir la imagen se usa el comando
 ```bash
 docker build -t hygen:test .
 ```
 
 ## Ejecutar contenedor
 
-Despues de contruir la imagen con una etiqueta de versión, puedes hacer referencia a esa versión especifica cuando ejecutes contenedores basados en ella. Por ejemplo:
+Después de contruir la imagen con una etiqueta de versión, puedes hacer referencia a esa versión especifica cuando ejecutes contenedores basados en ella. Por ejemplo:
 
 ```bash
 docker run -d --network host --name hygen:test hygen:etiqueta
@@ -30,7 +30,7 @@ docker exec -it hygen:test bash
 
 ## CREAR APIS CON EL CONTENEDOR
 
-### crear api_mid
+### Crear api_mid
 
 1. HOST
 ```bash
@@ -49,7 +49,7 @@ $ exit
 $ docker cp test_hygen:/go/src/github.com/udistrital/nombre_api_mid $GOPATH/src/github.com/udistrital
 ```
 
-### crear api_crud
+### Crear api_crud
 
 1. HOST
 ```bash
