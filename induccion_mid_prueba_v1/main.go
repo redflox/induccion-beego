@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/astaxie/beego/plugins/cors"
-	_ "github.com/induccion/induccion_mid_prueba_v1/routers"
+	_ "github.com/induccion-beego/induccion_mid_prueba_v1/routers"
 
 	"github.com/astaxie/beego"
 )

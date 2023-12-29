@@ -2,7 +2,7 @@ package helpers
 
 import (
 	"github.com/beego/beego/logs"
-	"github.com/induccion/induccion_mid_prueba_v1/models"
+	"github.com/induccion-beego/induccion_mid_prueba_v1/models"
 )
 
 func ListarContactosParametros() (contactosParametros models.ContactosParametros, outputError map[string]interface{}) {

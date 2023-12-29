@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/induccion/induccion_mid_prueba_v1/helpers"
+	"github.com/induccion-beego/induccion_mid_prueba_v1/helpers"
 )
 
 type ContactosParametrosController struct {

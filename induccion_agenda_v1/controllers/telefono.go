@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/beego/beego/logs"
-	"github.com/induccion/induccion_agenda_v1/models"
+	"github.com/induccion-beego/induccion_agenda_v1/models"
 
 	"github.com/astaxie/beego"
 )

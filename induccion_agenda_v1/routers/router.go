@@ -8,7 +8,7 @@
 package routers
 
 import (
-	"github.com/induccion/induccion_agenda_v1/controllers"
+	"github.com/induccion-beego/induccion_agenda_v1/controllers"
 
 	"github.com/astaxie/beego"
 )

@@ -1,4 +1,4 @@
-module github.com/induccion/induccion_parametros_v1
+module github.com/induccion-beego/induccion_parametros_v1
 
 go 1.21.5
 

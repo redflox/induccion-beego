@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/beego/beego/logs"
-	"github.com/induccion/induccion_parametros_v1/models"
+	"github.com/induccion-beego/induccion_parametros_v1/models"
 
 	"github.com/astaxie/beego"
 	"github.com/udistrital/utils_oas/time_bogota"
