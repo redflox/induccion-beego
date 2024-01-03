@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { AgendaComponent } from './agenda/agenda.component';
+import { AgendaComponent } from './components/agenda/agenda.component';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +11,5 @@ import { AgendaComponent } from './agenda/agenda.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'induccion_angular';
+  title = 'Agenda';
 }

@@ -1,0 +1,27 @@
+<h1>Agenda</h1>
+<section>
+    <button (click)="nuevoContacto()">Nuevo contacto</button>
+<h2>Contactos</h2>
+@if (contactos.length > 0) {
+    <ul class="list-group">
+        @for (contacto of contactos; track contacto.id ){
+            <app-contacto 
+                [id]="contacto.id"
+                nombre_completo="{{ contacto.nombre_completo }}"
+                (eliminarContactoEvent)="eliminarContacto($event)"
+                (editarContactoEvent)="editarContacto($event)"
+                >
+            </app-contacto>
+        }
+    </ul>
+} @else {
+    <p>No hay contactos</p>
+}
+</section>
+
+<app-modal 
+    [showModal]="showModal" 
+    (closeModalEvent)="changeModal()"
+>
+    <ng-template #modalContainer></ng-template>
+</app-modal>
